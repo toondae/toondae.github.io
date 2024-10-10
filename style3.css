@@ -360,18 +360,23 @@
   padding-left: 1rem;
 }
 
-.bracelet .btn-buy {
+.bracelet a {
+  display: flex;
   margin: 1rem 0.5rem;
   padding: 0.25rem 0;
   background-color: #cf3232;
-  color: #fff;
   border-radius: 0.5rem;
   border-style: none;
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
 }
 
-.bracelet .btn-buy :hover {
-  background-color: #FFD1D1;
+.bracelet a :hover {
+
   cursor: pointer;
+  background-color: #cf4a4a;
+  transition: all 0.25s;
 }
 
 
@@ -398,6 +403,7 @@
   justify-content: center;
   width: 100%;
   min-width: 240px;
+  padding: 0 5rem;
 }
 
 .product-state {
