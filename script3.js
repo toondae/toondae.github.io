@@ -1,22 +1,37 @@
-let headerFixed = document.getElementById('headerFixed');
-window.onscroll = function(){
-    if(window.pageYOffset > 100){
-        headerFixed.style.position="fixed";
-        headerFixed.style.top=0;
-    } else {
-        headerFixed.style.position='relative';
-        headerFixed.style.top = 100 ;
-    }
-}
+// let headerFixed = document.getElementById('headerFixed');
+// window.onscroll = function(){
+//     if(window.pageYOffset > 100){
+//         headerFixed.style.position="fixed";
+//         headerFixed.style.top=0;
+//     } else {
+//         headerFixed.style.position='relative';
+//         headerFixed.style.top = 100 ;
+//     }
+// }
+
+
+
+// function toggleHam(x) {
+//   x.classList.toggle("change");
+
+//   let myMenu = document.getElementById("myMenu");
+//   if (myMenu.className === "header-menu") {
+//       myMenu.className += " menu-active";
+//   } else {
+//     myMenu.className = "header-menu";
+//   }
+// }
+
+
 
 function toggleHam(x) {
   x.classList.toggle("change");
 
   let myMenu = document.getElementById("myMenu");
-  if (myMenu.className === "header-menu") {
-      myMenu.className += " menu-active";
-  } else {
+  if (myMenu.className === "header-menu menu-active") {
     myMenu.className = "header-menu";
+  } else {
+    myMenu.className = "header-menu menu-active";
   }
 }
 
